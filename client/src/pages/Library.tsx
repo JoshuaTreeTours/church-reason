@@ -2,163 +2,83 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ExternalLink } from "lucide-react";
 
+// Book list restored from the original library page (hereandclear.org/library.html),
+// linked by the original site's Amazon ASINs.
 const bookCategories = [
   {
     title: "Science",
-    description:
-      "This library is a curated path through science, philosophy, and clear thinking. These books challenge comforting illusions, replace superstition with understanding, and expand our sense of meaning in a real, physical universe.",
+    heading: "SCIENCE books",
     books: [
-      {
-        title: "A Brief History of Time",
-        author: "Stephen Hawking",
-        asin: "0553380168",
-      },
-      {
-        title: "The Selfish Gene",
-        author: "Richard Dawkins",
-        asin: "0679783369",
-      },
-      {
-        title: "Cosmos",
-        author: "Carl Sagan",
-        asin: "0451529065",
-      },
-      {
-        title: "The Structure of Scientific Revolutions",
-        author: "Thomas S. Kuhn",
-        asin: "0226458083",
-      },
-      {
-        title: "The Demon-Haunted World",
-        author: "Carl Sagan",
-        asin: "0345409469",
-      },
+      { title: "Cosmos", author: "Carl Sagan", asin: "0451529065" },
+      { title: "The Selfish Gene", author: "Richard Dawkins", asin: "0679783369" },
+      { title: "A Brief History of Time", author: "Stephen Hawking", asin: "0553380168" },
+      { title: "A Short History of Nearly Everything", author: "Bill Bryson", asin: "039333810X" },
+      { title: "The Blank Slate", author: "Steven Pinker", asin: "B00O924WHM" },
+      { title: "Pale Blue Dot", author: "Carl Sagan", asin: "0345379187" },
+      { title: "The Ancestor's Tale", author: "Richard Dawkins", asin: "0618918248" },
+      { title: "Undeniable: Evolution and the Science of Creation", author: "Bill Nye", asin: "1616147539" },
     ],
   },
   {
     title: "Wealth",
-    description:
-      "Understanding economics, finance, and the principles of creating and maintaining wealth for freedom and security.",
+    heading: "WEALTH",
     books: [
-      {
-        title: "The Intelligent Investor",
-        author: "Benjamin Graham",
-        asin: "0060555661",
-      },
-      {
-        title: "Thinking, Fast and Slow",
-        author: "Daniel Kahneman",
-        asin: "0374533555",
-      },
-      {
-        title: "The Lean Startup",
-        author: "Eric Ries",
-        asin: "0307887898",
-      },
-      {
-        title: "Good to Great",
-        author: "Jim Collins",
-        asin: "0066620996",
-      },
-      {
-        title: "The 4-Hour Workweek",
-        author: "Tim Ferriss",
-        asin: "0307465357",
-      },
+      { title: "The Richest Man in Babylon", author: "George S. Clason", asin: "1941631568" },
+      { title: "How to Win Friends and Influence People", author: "Dale Carnegie", asin: "1451612052" },
+      { title: "Total Money Makeover", author: "Dave Ramsey", asin: "1455512206" },
+      { title: "Think and Grow Rich", author: "Napoleon Hill", asin: "1585424331" },
+      { title: "Trade and Wealth Classics", author: "Various", asin: "0195144082" },
     ],
   },
   {
     title: "Classic Philosophy",
-    description:
-      "Timeless wisdom from philosophers who shaped rational thought and ethical reasoning.",
+    heading: "CLASSIC PHILOSOPHY books",
     books: [
-      {
-        title: "Meditations",
-        author: "Marcus Aurelius",
-        asin: "0486454223",
-      },
+      { title: "Meditations", author: "Marcus Aurelius", asin: "0486454223" },
+      { title: "Six Great Dialogues", author: "Plato", asin: "B004HJ0ZMI" },
+      { title: "Nicomachean Ethics", author: "Aristotle", asin: "0199213615" },
+      { title: "Discourse on the Method", author: "René Descartes", asin: "1107414776" },
       {
         title: "The Essential Epicurus",
         author: "Epicurus (translated by Eugene O'Connor)",
-        asin: "0879758104",
+        url: "https://www.amazon.com/s?k=The+Essential+Epicurus+Eugene+O%27Connor",
       },
-      {
-        title: "Critique of Pure Reason",
-        author: "Immanuel Kant",
-        asin: "0199213615",
-      },
-      {
-        title: "Discourse on Method",
-        author: "René Descartes",
-        asin: "1107414776",
-      },
-      {
-        title: "On the Nature of Things",
-        author: "Lucretius",
-        asin: "0140447962",
-      },
+      { title: "On the Nature of Things", author: "Lucretius", asin: "0140447962" },
     ],
   },
   {
     title: "Health",
-    description:
-      "Practical and scientific approaches to physical and mental wellbeing.",
+    heading: "HEALTH",
     books: [
+      { title: "The Four Agreements", author: "Don Miguel Ruiz", asin: "1878424343" },
+      { title: "How to Stop Worrying and Start Living", author: "Dale Carnegie", asin: "0671791540" },
       {
-        title: "Why We Sleep",
-        author: "Matthew Walker",
-        asin: "0393534432",
+        title: "Food, Inc.: A Participant Guide - How Industrial Food Is Making Us Sicker, Fatter, and Poorer",
+        author: "Participant Media",
+        asin: "1586486942",
       },
-      {
-        title: "The Body Keeps the Score",
-        author: "Bessel van der Kolk",
-        asin: "0553386697",
-      },
-      {
-        title: "Atomic Habits",
-        author: "James Clear",
-        asin: "0735211299",
-      },
-      {
-        title: "The Stress Solution",
-        author: "Rangan Chatterjee",
-        asin: "0008308969",
-      },
+      { title: "The Relaxation Response", author: "Herbert Benson", asin: "0931779537" },
     ],
   },
   {
     title: "Must Reads",
-    description:
-      "Essential works that every rational thinker should explore.",
+    heading: "MUST READS",
     books: [
-      {
-        title: "A Secular Age",
-        author: "Charles Taylor",
-        asin: "0674026760",
-      },
-      {
-        title: "The Righteous Mind",
-        author: "Jonathan Haidt",
-        asin: "0345801351",
-      },
-      {
-        title: "Sapiens",
-        author: "Yuval Noah Harari",
-        asin: "0062316095",
-      },
-      {
-        title: "The God Delusion",
-        author: "Richard Dawkins",
-        asin: "0618680004",
-      },
-      {
-        title: "Enlightenment Now",
-        author: "Steven Pinker",
-        asin: "0525427570",
-      },
+      { title: "The Demon-Haunted World: Science as a Candle in the Dark", author: "Carl Sagan", asin: "0345409469" },
+      { title: "The God Delusion", author: "Richard Dawkins", asin: "0618918248" },
+      { title: "The End of Faith", author: "Sam Harris", asin: "0393327655" },
+      { title: "The Swerve: How the World Became Modern", author: "Stephen Greenblatt", asin: "1451636016" },
+      { title: "On the Origin of Species", author: "Charles Darwin", asin: "1603866167" },
+      { title: "Relativity: The Special and the General Theory", author: "Albert Einstein", asin: "0486600882" },
+      { title: "Dialogue Concerning the Two Chief World Systems", author: "Galileo Galilei", asin: "1603863796" },
     ],
   },
 ];
+
+function bookLink(book: { asin?: string; url?: string }) {
+  if (book.url) return book.url;
+  return `https://www.amazon.com/dp/${book.asin}`;
+}
 
 export default function Library() {
   return (
@@ -170,10 +90,10 @@ export default function Library() {
         <section className="bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground py-16 md:py-24">
           <div className="container">
             <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4">
-              The Library
+              Library
             </h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-2xl">
-              A curated collection of books to expand your knowledge and understanding.
+            <p className="text-lg md:text-xl opacity-90 max-w-3xl">
+              This library is a curated path through science, philosophy, and clear thinking. These books challenge comforting illusions, replace superstition with understanding, and expand our sense of meaning in a real, physical universe. Start anywhere — but be prepared to think, question, and wake up.
             </p>
           </div>
         </section>
@@ -184,25 +104,22 @@ export default function Library() {
             <div className="space-y-20">
               {bookCategories.map((category, categoryIndex) => (
                 <div key={categoryIndex} className="max-w-4xl mx-auto">
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2 capitalize">
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">
                     {category.title}
                   </h2>
-                  <p className="text-muted-foreground mb-8 leading-relaxed">
-                    {category.description}
-                  </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {category.books.map((book, bookIndex) => (
                       <a
                         key={bookIndex}
-                        href={`https://www.amazon.com/dp/${book.asin}`}
+                        href={bookLink(book)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group bg-card rounded-lg p-6 shadow-elegant hover:shadow-elegant-lg transition-smooth border border-border hover:border-accent"
                       >
                         <div className="flex flex-col h-full">
                           <div className="mb-4 flex-1">
-                            <h3 className="font-serif text-lg font-bold text-foreground group-hover:text-accent transition-smooth mb-2 line-clamp-2">
+                            <h3 className="font-serif text-lg font-bold text-foreground group-hover:text-accent transition-smooth mb-2">
                               {book.title}
                             </h3>
                             <p className="text-sm text-muted-foreground">
@@ -223,16 +140,6 @@ export default function Library() {
                   )}
                 </div>
               ))}
-            </div>
-
-            {/* Closing Message */}
-            <div className="max-w-3xl mx-auto mt-20 p-8 bg-card rounded-lg border border-border text-center">
-              <p className="text-lg text-foreground leading-relaxed mb-4">
-                Start anywhere in this library — but be prepared to think, question, and wake up.
-              </p>
-              <p className="text-muted-foreground italic">
-                These books challenge comforting illusions and replace superstition with understanding.
-              </p>
             </div>
           </div>
         </section>

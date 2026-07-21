@@ -1,14 +1,17 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+const KIERKEGAARD_IMG = "/manus-storage/truths-photo_f926314a.jpg";
+const TYSON_IMG = "/manus-storage/truths-graphic_24edbf1a.png";
+
 const hardTruths = [
   { text: "This life is real.", imperative: "Get serious!" },
   {
-    text: "Your consciousness and very person are different day to day and ceases at death.",
-    imperative: "Carpe Diem!",
+    text: "Your consciousness and very person are different day to day and ceases at death. The mind is controlled by the physicality of the brain. Once gone, it returns to oblivion.",
+    imperative: 'Carpe Diem! (Latin for "Live in this day!")',
   },
   {
-    text: "Life is not fair - We ARE NOT all created equal with equal opportunities.",
+    text: 'Life is not fair - We ARE NOT "all created equal" with equal opportunities.',
     imperative: "Be the hunter!",
   },
   {
@@ -38,7 +41,7 @@ const easyTruths = [
   { text: "Freedoms are not free.", imperative: "Respect them!" },
   { text: "There is no truth worth dying for.", imperative: "Live!" },
   { text: "You are made of star stuff. You are the universe waking up.", imperative: "Wake up!" },
-  { text: "We are all a Unus mundus, Latin for one world.", imperative: "Love one another!" },
+  { text: 'We are all a Unus mundus, Latin for "one world."', imperative: "Love one another!" },
   { text: "You were born with a mind to create and set yourself free from sloth and drudgery.", imperative: "Produce!" },
   { text: "Money is the currency of the day and defines our personal freedoms.", imperative: "Be efficient!" },
   { text: "Your largest obstacles in life include where you live and who you live with.", imperative: "Choose wisely!" },
@@ -81,10 +84,13 @@ export default function Truths() {
         <section className="bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground py-16 md:py-24">
           <div className="container">
             <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4">
-              The Truths
+              Truths
             </h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-2xl">
+            <p className="text-lg md:text-xl opacity-90 max-w-3xl">
               What is TRUE? Science, for one. Skeptical inquiry in both science and religion separates pure knowledge from pure nonsense.
+            </p>
+            <p className="text-base md:text-lg opacity-80 max-w-3xl mt-4">
+              For those that discredit the ability of science to have a complete understanding, we ask "does the Earth revolve around the sun?" Science can provide many answers that are inscrutable showing knowledge can be achieved!
             </p>
           </div>
         </section>
@@ -93,7 +99,14 @@ export default function Truths() {
         <section className="py-16 md:py-24 bg-background">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <h2 className="section-title mb-12">The HARD Truths</h2>
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+                <h2 className="section-title mb-0">The HARD Truths</h2>
+                <img
+                  src={KIERKEGAARD_IMG}
+                  alt="Soren Kierkegaard: There are two ways to be fooled"
+                  className="w-64 rounded-lg shadow-elegant border border-border"
+                />
+              </div>
 
               <div className="space-y-6">
                 {hardTruths.map((truth, index) => (
@@ -118,7 +131,14 @@ export default function Truths() {
         <section className="py-16 md:py-24 bg-card border-t border-border">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <h2 className="section-title mb-12">The EASY Truths</h2>
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+                <h2 className="section-title mb-0">The EASY Truths</h2>
+                <img
+                  src={TYSON_IMG}
+                  alt="The good thing about science is that it's true whether or not you believe in it"
+                  className="w-52 rounded-lg shadow-elegant border border-border"
+                />
+              </div>
 
               <div className="space-y-6">
                 {easyTruths.map((truth, index) => (

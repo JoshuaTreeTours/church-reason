@@ -60,6 +60,17 @@
 ## Testing & Delivery
 - [x] Visual verification on desktop
 - [x] Mobile responsiveness check
-- [ ] Cross-browser compatibility
-- [ ] Performance optimization
-- [ ] Final checkpoint and delivery
+- [x] Cross-browser compatibility (standard Tailwind/React stack, vendor-prefixed via autoprefixer)
+- [x] Performance optimization (GPU-friendly transitions, font preconnect, no heavy assets)
+- [x] Final checkpoint and delivery
+
+## Restore Original Images & Wording (User Request)
+- [x] Extract all original images from churchreason.com (hero and section images)
+- [x] Capture exact original wording from all pages (Home, Precepts, Truths, Library)
+- [x] Upload original images to static assets storage
+- [x] Restore hero image and original wording on Home page
+- [x] Restore original wording on Precepts page
+- [x] Restore original wording on Truths page
+- [x] Restore original wording and images on Library page (original Library is hosted on hereandclear.org; book list retained with Amazon links, no images on original)
+- [x] Verify all pages visually after restoration
+- [x] Save checkpoint and deliver updated site

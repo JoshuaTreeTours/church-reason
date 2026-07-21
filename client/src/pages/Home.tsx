@@ -3,6 +3,11 @@ import { ArrowRight, HeartPulse, Landmark, BookOpen } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+const HERO_IMG = "/manus-storage/home-hero_7c653cae.jpg";
+const THINKING_IMG = "/manus-storage/home-thinking_2f4418d8.png";
+const QUOTE_IMG = "/manus-storage/home-quote-img_213b8d88.jpg";
+const FB_CTA_IMG = "/manus-storage/home-fb-cta_44a20828.jpg";
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -10,17 +15,25 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground py-20 md:py-32">
-          <div className="container">
+        <section className="relative text-primary-foreground overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src={HERO_IMG}
+              alt="Classical statue against modern skyscrapers"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-primary/75" />
+          </div>
+          <div className="relative container py-24 md:py-36">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-lg md:text-xl font-medium mb-4 opacity-90 tracking-wide">
                 Promoting Reason in a Modern World
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight">
-                Think Clearly, Live Well
+                The Church of Reason
               </h1>
               <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
-                Discover the ten reasonable precepts for achieving health, wealth, and knowledge through rational thinking and evidence-based living.
+                Our Ten Reasonable Precepts dedicated to attain Health, Wealth and Knowledge.
               </p>
               <Link href="/precepts">
                 <a className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-secondary/90 transition-smooth active:scale-95">
@@ -35,21 +48,38 @@ export default function Home() {
         {/* Thinking is Good Section */}
         <section className="py-16 md:py-24 bg-background">
           <div className="container">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="section-title mb-8">Thinking is Good</h2>
-              <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-foreground mb-6">
-                  In a modern era of skyscrapers and technology, so many people are still sidetracked by false belief systems that are not based on reason. Reason allows us humans to think, to anticipate, and to invent. It is what separates us from all the animals and inanimate matter on Earth.
-                </p>
-                <p className="text-lg leading-relaxed text-foreground mb-6">
-                  At The Church of Reason, we promote the use of this highest faculty to avoid beliefs based on bad evidence. We promote science and the art of happiness.
-                </p>
-                <p className="text-lg leading-relaxed text-foreground mb-6">
-                  We will not try to change your religion. Religion has offered comfort to many people throughout the centuries. But to our members, knowing is believing.
-                </p>
-                <p className="text-lg leading-relaxed text-foreground font-semibold">
-                  Life is short, but it is amazing and can be fun.
-                </p>
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
+              <div className="md:col-span-3">
+                <h2 className="section-title mb-8">Thinking is Good</h2>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-lg leading-relaxed text-foreground mb-6">
+                    In a modern era of skyscapers and technology, so many people are still side-tracked by false belief systems that are not based on reason. Reason allows us humans to think, to anticipate and to invent. It is what separates us from all the animals and inanimate matter on Earth.
+                  </p>
+                  <p className="text-lg leading-relaxed text-foreground mb-6">
+                    At The Church of Reason, we promote the use of this highest faculty to avoid beliefs based on bad evidence. We promote science and the art of happiness.
+                  </p>
+                  <p className="text-lg leading-relaxed text-foreground mb-6">
+                    We will not try to change your religion. Religion has offered comfort to many people throughout the centuries. But to our members, knowing is believing.
+                  </p>
+                  <p className="text-lg leading-relaxed text-foreground mb-6">
+                    Life is short, but it is amazing and can be fun.
+                  </p>
+                  <p className="text-lg leading-relaxed text-foreground font-semibold">
+                    OUR MESSAGE : Let's be reasonable and love life again!
+                  </p>
+                </div>
+              </div>
+              <div className="md:col-span-2 flex flex-col gap-6 md:pt-20">
+                <img
+                  src={THINKING_IMG}
+                  alt="Dictionary definition of reason"
+                  className="w-full rounded-lg shadow-elegant border border-border bg-white"
+                />
+                <img
+                  src={QUOTE_IMG}
+                  alt="Always Seek Knowledge"
+                  className="w-full rounded-lg shadow-elegant border border-border"
+                />
               </div>
             </div>
           </div>
@@ -58,8 +88,7 @@ export default function Home() {
         {/* The Ultimate Goals Section */}
         <section className="py-16 md:py-24 bg-card border-t border-border">
           <div className="container">
-            <h2 className="section-title mb-4">The Ultimate Goals</h2>
-            <p className="section-subtitle mb-12">Three pillars for a life well-lived</p>
+            <h2 className="section-title mb-12">The Ultimate Goals</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Health Card */}
@@ -68,8 +97,8 @@ export default function Home() {
                   <HeartPulse size={24} className="text-accent" />
                 </div>
                 <h3 className="font-serif text-2xl font-bold mb-3">Health</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  The key to Bliss. A healthy mind and body are the foundation for all achievement and happiness in life.
+                <p className="text-muted-foreground leading-relaxed italic">
+                  The key to Bliss
                 </p>
               </div>
 
@@ -79,8 +108,8 @@ export default function Home() {
                   <Landmark size={24} className="text-accent" />
                 </div>
                 <h3 className="font-serif text-2xl font-bold mb-3">Wealth</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  The key to Freedom. Financial independence allows you to make choices aligned with your values and pursue your goals.
+                <p className="text-muted-foreground leading-relaxed italic">
+                  The key to Freedom
                 </p>
               </div>
 
@@ -90,8 +119,8 @@ export default function Home() {
                   <BookOpen size={24} className="text-accent" />
                 </div>
                 <h3 className="font-serif text-2xl font-bold mb-3">Knowledge</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  The key to Wisdom. Continuous learning expands your understanding and empowers rational decision-making.
+                <p className="text-muted-foreground leading-relaxed italic">
+                  The key to Wisdom
                 </p>
               </div>
             </div>
@@ -104,7 +133,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto">
               <blockquote className="quote-block text-center">
                 <p className="text-xl md:text-2xl mb-4">
-                  "Reason is the ability to discern how to survive. This virtue is fundamental and is hinged on the glorious premise that knowledge is attainable in this life. The real choice is to think or not to think. That is the question..."
+                  "Reason is the ability to discern how to survive. This virtue is fundamental and is hinged on the glorious premise that knowledge is attainable in this life. The real choice is to think or not to think. That is the question.."
                 </p>
                 <p className="text-sm font-serif">— The Church of Reason</p>
               </blockquote>
@@ -116,9 +145,21 @@ export default function Home() {
         <section className="py-16 md:py-24 bg-card border-t border-border">
           <div className="container">
             <div className="max-w-2xl mx-auto text-center">
+              <a
+                href="https://www.facebook.com/churchreason/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mb-8"
+              >
+                <img
+                  src={FB_CTA_IMG}
+                  alt="Join Church Reason on Facebook today!"
+                  className="w-28 h-28 mx-auto rounded-lg shadow-elegant hover:shadow-elegant-lg transition-smooth"
+                />
+              </a>
               <h2 className="section-title mb-6">Join the Reasonables</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Connect with our community on Facebook and engage in thoughtful discussions about reason, philosophy, and living well.
+                Read our latest Facebook Posts and follow us to join.
               </p>
               <a
                 href="https://www.facebook.com/churchreason/"
