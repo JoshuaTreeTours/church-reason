@@ -77,3 +77,4 @@
 
 ## Bug Fixes (User Reported)
 - [x] Fix nested <a> error: remove <a> tags wrapped inside wouter <Link> components (Home page and anywhere else)
+- [x] Remove darkening overlay from Home hero so the image shows in full color and visibility (keep text readable)
