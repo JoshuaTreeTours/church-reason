@@ -14,14 +14,14 @@ export default function Navigation() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm shadow-elegant">
-      <div className="container flex items-center justify-between py-4">
+      <div className="container flex items-center justify-between py-2">
         {/* Logo/Brand */}
         <Link href="/">
           <div className="flex items-center gap-2 cursor-pointer">
             <img
               src="/manus-storage/home-fb-cta_44a20828.jpg"
               alt="Church of Reason seal"
-              className="w-9 h-9 rounded-lg object-cover border border-border"
+              className="w-[108px] h-[108px] rounded-lg object-cover border border-border"
             />
             <span className="font-serif text-lg font-bold text-primary hidden sm:inline">
               Church of Reason

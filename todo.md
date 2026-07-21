@@ -114,3 +114,7 @@
 - [x] Replace the Phi glyph in the nav with the Church of Reason seal image (home-fb-cta_44a20828.jpg)
 - [x] Update favicon to the seal image
 - [x] Verify, checkpoint, and deliver
+
+## Logo Enlargement (User Request)
+- [x] Enlarge the nav seal logo to 3x size (w-9 → w-27/108px)
+- [x] Verify nav layout still balanced, checkpoint, and deliver
