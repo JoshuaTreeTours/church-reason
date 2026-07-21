@@ -118,3 +118,7 @@
 ## Logo Enlargement (User Request)
 - [x] Enlarge the nav seal logo to 3x size (w-9 → w-27/108px)
 - [x] Verify nav layout still balanced, checkpoint, and deliver
+
+## Header Title Font Enlargement (User Request)
+- [x] Scale the "Church of Reason" header title font in proportion to the 3x logo
+- [x] Verify desktop and mobile, checkpoint, and deliver

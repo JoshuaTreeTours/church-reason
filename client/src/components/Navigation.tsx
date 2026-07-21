@@ -23,7 +23,7 @@ export default function Navigation() {
               alt="Church of Reason seal"
               className="w-[108px] h-[108px] rounded-lg object-cover border border-border"
             />
-            <span className="font-serif text-lg font-bold text-primary hidden sm:inline">
+            <span className="font-serif text-4xl md:text-5xl font-bold text-primary hidden sm:inline">
               Church of Reason
             </span>
           </div>
