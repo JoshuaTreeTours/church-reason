@@ -122,3 +122,7 @@
 ## Header Title Font Enlargement (User Request)
 - [x] Scale the "Church of Reason" header title font in proportion to the 3x logo
 - [x] Verify desktop and mobile, checkpoint, and deliver
+
+## Hero Title Removal Again (User Request)
+- [x] Remove "The Church of Reason" overlay from the hero image
+- [x] Verify, checkpoint, and deliver
