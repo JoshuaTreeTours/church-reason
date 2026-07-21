@@ -81,3 +81,7 @@
 - [x] Remove all text from the Home hero (image only)
 - [x] Move the site name/headline to a new section just below the hero
 - [x] Remove the "Made with Manus" badge (platform-injected; controlled via Management UI Settings, not code — user informed)
+- [x] Change site icon/logo from Psi (Ψ) to Phi (Φ) in nav and new favicon.svg (footer has no glyph)
+- [x] Re-extract the original Library book list (titles, authors, ASINs) from hereandclear.org
+- [x] Correct Library entries so displayed title/author matches the actual book behind each Amazon link (verified all 32 ASINs against live Amazon pages)
+- [x] Verify all Amazon links resolve to the correct books (dropped non-book/unrelated ASINs: DVD sets and A Curious Madness)

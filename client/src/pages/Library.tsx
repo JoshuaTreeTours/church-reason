@@ -2,75 +2,125 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ExternalLink } from "lucide-react";
 
-// Book list restored from the original library page (hereandclear.org/library.html),
-// linked by the original site's Amazon ASINs.
+// Book list restored from the original library page (hereandclear.org/library.html).
+// Every title/author below was verified against the actual Amazon product page
+// for the original site's ASIN, so displayed names match the linked products.
 const bookCategories = [
   {
     title: "Science",
-    heading: "SCIENCE books",
     books: [
-      { title: "Cosmos", author: "Carl Sagan", asin: "0451529065" },
-      { title: "The Selfish Gene", author: "Richard Dawkins", asin: "0679783369" },
+      { title: "The Origin of Species: 150th Anniversary Edition", author: "Charles Darwin", asin: "0451529065" },
       { title: "A Brief History of Time", author: "Stephen Hawking", asin: "0553380168" },
-      { title: "A Short History of Nearly Everything", author: "Bill Bryson", asin: "039333810X" },
-      { title: "The Blank Slate", author: "Steven Pinker", asin: "B00O924WHM" },
-      { title: "Pale Blue Dot", author: "Carl Sagan", asin: "0345379187" },
-      { title: "The Ancestor's Tale", author: "Richard Dawkins", asin: "0618918248" },
-      { title: "Undeniable: Evolution and the Science of Creation", author: "Bill Nye", asin: "1616147539" },
+      {
+        title: "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory",
+        author: "Brian Greene",
+        asin: "039333810X",
+      },
+      {
+        title: "Billions & Billions: Thoughts on Life and Death at the Brink of the Millennium",
+        author: "Carl Sagan",
+        asin: "0345379187",
+      },
+      {
+        title: "The Non-Local Universe: The New Physics and Matters of the Mind",
+        author: "Robert Nadeau & Menas Kafatos", // verified: Amazon page for 0195144082 lists this title/author pair
+        asin: "0195144082",
+      },
+      { title: "God and the Atom", author: "Victor J. Stenger", asin: "1616147539" },
     ],
   },
   {
     title: "Wealth",
-    heading: "WEALTH",
     books: [
-      { title: "The Richest Man in Babylon", author: "George S. Clason", asin: "1941631568" },
-      { title: "How to Win Friends and Influence People", author: "Dale Carnegie", asin: "1451612052" },
-      { title: "Total Money Makeover", author: "Dave Ramsey", asin: "1455512206" },
-      { title: "Think and Grow Rich", author: "Napoleon Hill", asin: "1585424331" },
-      { title: "Trade and Wealth Classics", author: "Various", asin: "0195144082" },
+      { title: "The Wealth of Nations", author: "Adam Smith", asin: "0679783369" },
+      {
+        title: "Think and Grow Rich: The Landmark Bestseller Now Revised and Updated for the 21st Century",
+        author: "Napoleon Hill",
+        asin: "1585424331",
+      },
+      { title: "Creating Affluence: The A-to-Z Steps to a Richer Life", author: "Deepak Chopra", asin: "1878424343" },
+      {
+        title: "Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Destiny!",
+        author: "Tony Robbins",
+        asin: "0671791540",
+      },
+      { title: "Total Recall: My Unbelievably True Life Story", author: "Arnold Schwarzenegger", asin: "1451662440" },
     ],
   },
   {
     title: "Classic Philosophy",
-    heading: "CLASSIC PHILOSOPHY books",
     books: [
-      { title: "Meditations", author: "Marcus Aurelius", asin: "0486454223" },
-      { title: "Six Great Dialogues", author: "Plato", asin: "B004HJ0ZMI" },
-      { title: "Nicomachean Ethics", author: "Aristotle", asin: "0199213615" },
-      { title: "Discourse on the Method", author: "René Descartes", asin: "1107414776" },
+      { title: "Utilitarianism", author: "John Stuart Mill", asin: "0486454223" },
+      { title: "The Nicomachean Ethics", author: "Aristotle", asin: "0199213615" },
       {
-        title: "The Essential Epicurus",
-        author: "Epicurus (translated by Eugene O'Connor)",
-        url: "https://www.amazon.com/s?k=The+Essential+Epicurus+Eugene+O%27Connor",
+        title: "The World as Will and Representation, Volume 1",
+        author: "Arthur Schopenhauer",
+        asin: "1107414776",
+      },
+      { title: "David Hume: 21 Works", author: "David Hume", asin: "B00O924WHM" },
+      {
+        title: "The Essential Epicurus: Letters, Principal Doctrines, Vatican Sayings, and Fragments",
+        author: "Epicurus (translated by Eugene M. O'Connor)",
+        asin: "0879758104",
       },
       { title: "On the Nature of Things", author: "Lucretius", asin: "0140447962" },
+      { title: "Tending the Epicurean Garden", author: "Hiram Crespo", asin: "0931779537" },
     ],
   },
   {
     title: "Health",
-    heading: "HEALTH",
     books: [
-      { title: "The Four Agreements", author: "Don Miguel Ruiz", asin: "1878424343" },
-      { title: "How to Stop Worrying and Start Living", author: "Dale Carnegie", asin: "0671791540" },
+      {
+        title: "The China Study: The Most Comprehensive Study of Nutrition Ever Conducted",
+        author: "T. Colin Campbell & Thomas M. Campbell",
+        asin: "1941631568",
+      },
+      {
+        title: "Power Foods for the Brain: An Effective 3-Step Plan to Protect Your Mind and Strengthen Your Memory",
+        author: "Neal D. Barnard",
+        asin: "1455512206",
+      },
       {
         title: "Food, Inc.: A Participant Guide - How Industrial Food Is Making Us Sicker, Fatter, and Poorer",
-        author: "Participant Media",
+        author: "Karl Weber (editor)",
         asin: "1586486942",
       },
-      { title: "The Relaxation Response", author: "Herbert Benson", asin: "0931779537" },
     ],
   },
   {
     title: "Must Reads",
-    heading: "MUST READS",
     books: [
-      { title: "The Demon-Haunted World: Science as a Candle in the Dark", author: "Carl Sagan", asin: "0345409469" },
+      {
+        title: "The Demon-Haunted World: Science as a Candle in the Dark",
+        author: "Carl Sagan & Ann Druyan",
+        asin: "0345409469",
+      },
       { title: "The God Delusion", author: "Richard Dawkins", asin: "0618918248" },
-      { title: "The End of Faith", author: "Sam Harris", asin: "0393327655" },
-      { title: "The Swerve: How the World Became Modern", author: "Stephen Greenblatt", asin: "1451636016" },
-      { title: "On the Origin of Species", author: "Charles Darwin", asin: "1603866167" },
-      { title: "Relativity: The Special and the General Theory", author: "Albert Einstein", asin: "0486600882" },
-      { title: "Dialogue Concerning the Two Chief World Systems", author: "Galileo Galilei", asin: "1603863796" },
+      {
+        title: "The End of Faith: Religion, Terror, and the Future of Reason",
+        author: "Sam Harris",
+        asin: "0393327655",
+      },
+      {
+        title: "Waking Up: A Guide to Spirituality Without Religion",
+        author: "Sam Harris",
+        asin: "1451636016",
+      },
+      {
+        title: "A Dynamical Theory of the Electromagnetic Field",
+        author: "James Clerk Maxwell",
+        asin: "1603866167",
+      },
+      {
+        title: "The Thirteen Books of the Elements, Vol. 1",
+        author: "Euclid",
+        asin: "0486600882",
+      },
+      {
+        title: "Philosophiae Naturalis Principia Mathematica",
+        author: "Isaac Newton",
+        asin: "1603863796",
+      },
     ],
   },
 ];
