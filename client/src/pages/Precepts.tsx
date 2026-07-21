@@ -130,7 +130,7 @@ export default function Precepts() {
               Precepts
             </h1>
             <p className="text-lg md:text-xl opacity-90 max-w-2xl">
-              Our Ten Reasonable Precepts dedicated to attain Health, Wealth and Knowledge.
+              Ten reasoned precepts offered not as commandments, but as practical guides to the pursuit of health, wealth, knowledge, and a meaningful life.
             </p>
           </div>
         </section>

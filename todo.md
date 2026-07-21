@@ -126,3 +126,7 @@
 ## Hero Title Removal Again (User Request)
 - [x] Remove "The Church of Reason" overlay from the hero image
 - [x] Verify, checkpoint, and deliver
+
+## Precepts Header Text (User Request)
+- [x] Replace Precepts page header text with the new "Ten reasoned precepts..." wording
+- [x] Verify, checkpoint, and deliver
