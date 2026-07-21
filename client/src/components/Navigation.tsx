@@ -18,9 +18,11 @@ export default function Navigation() {
         {/* Logo/Brand */}
         <Link href="/">
           <div className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">Φ</span>
-            </div>
+            <img
+              src="/manus-storage/home-fb-cta_44a20828.jpg"
+              alt="Church of Reason seal"
+              className="w-9 h-9 rounded-lg object-cover border border-border"
+            />
             <span className="font-serif text-lg font-bold text-primary hidden sm:inline">
               Church of Reason
             </span>

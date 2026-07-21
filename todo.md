@@ -109,3 +109,8 @@
 ## Hero Title Restoration (User Request)
 - [x] Add "The Church of Reason" at the top of the hero image with a dark transparent backdrop
 - [x] Verify, checkpoint, and deliver
+
+## Nav Logo Replacement (User Request)
+- [x] Replace the Phi glyph in the nav with the Church of Reason seal image (home-fb-cta_44a20828.jpg)
+- [x] Update favicon to the seal image
+- [x] Verify, checkpoint, and deliver
