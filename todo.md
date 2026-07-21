@@ -105,3 +105,7 @@
 - [x] Remove Deepak Chopra's Creating Affluence from the Wealth section
 - [x] Replace Library header text with the new curated-collection wording
 - [x] Verify, checkpoint, and deliver
+
+## Hero Title Restoration (User Request)
+- [x] Add "The Church of Reason" at the top of the hero image with a dark transparent backdrop
+- [x] Verify, checkpoint, and deliver

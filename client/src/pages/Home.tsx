@@ -21,6 +21,14 @@ export default function Home() {
             alt="Classical statue against modern skyscrapers"
             className="w-full h-[45vh] md:h-[60vh] object-cover"
           />
+          <div className="absolute top-0 inset-x-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent pt-6 pb-10 md:pt-8 md:pb-14">
+            <h1
+              className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white text-center px-4"
+              style={{ textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}
+            >
+              The Church of Reason
+            </h1>
+          </div>
         </section>
 
         {/* Compact tagline + CTA below hero */}
