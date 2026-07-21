@@ -90,3 +90,9 @@
 - [x] Verify Open Library cover availability for each book ISBN/ASIN (25/28 via ISBN; 3 via verified cover IDs)
 - [x] Add cover thumbnails to Library cards with graceful fallback for missing covers
 - [x] Test visually, run checks, checkpoint, and deliver
+
+## Home Page Tightening (User Request)
+- [x] Move "The Church of Reason" title inside the hero image
+- [x] Keep tagline/subtitle/CTA in a compact section below the hero
+- [x] Reduce vertical spacing across all Home sections for a tighter layout
+- [x] Verify visually, checkpoint, and deliver
