@@ -96,3 +96,12 @@
 - [x] Keep tagline/subtitle/CTA in a compact section below the hero
 - [x] Reduce vertical spacing across all Home sections for a tighter layout
 - [x] Verify visually, checkpoint, and deliver
+
+## Home Hero Text Removal (User Request)
+- [x] Remove "The Church of Reason" title from the hero
+- [x] Remove "Our Ten Reasonable Precepts..." subtitle line
+
+## Library Edits (User Request)
+- [x] Remove Deepak Chopra's Creating Affluence from the Wealth section
+- [x] Replace Library header text with the new curated-collection wording
+- [x] Verify, checkpoint, and deliver

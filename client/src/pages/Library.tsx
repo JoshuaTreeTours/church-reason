@@ -61,7 +61,6 @@ const bookCategories: { title: string; books: Book[] }[] = [
         author: "Napoleon Hill",
         asin: "1585424331",
       },
-      { title: "Creating Affluence: The A-to-Z Steps to a Richer Life", author: "Deepak Chopra", asin: "1878424343" },
       {
         title: "Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Destiny!",
         author: "Tony Robbins",
@@ -197,7 +196,7 @@ export default function Library() {
               Library
             </h1>
             <p className="text-lg md:text-xl opacity-90 max-w-3xl">
-              This library is a curated path through science, philosophy, and clear thinking. These books challenge comforting illusions, replace superstition with understanding, and expand our sense of meaning in a real, physical universe. Start anywhere — but be prepared to think, question, and wake up.
+              This library presents a curated collection of influential works in science, philosophy, history, health, economics, and exploration. Together, these books encourage curiosity, critical thinking, and a deeper understanding of the world we inhabit.
             </p>
           </div>
         </section>

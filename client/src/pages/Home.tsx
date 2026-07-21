@@ -21,25 +21,14 @@ export default function Home() {
             alt="Classical statue against modern skyscrapers"
             className="w-full h-[45vh] md:h-[60vh] object-cover"
           />
-          <div className="absolute inset-0 flex items-end justify-center pb-8 md:pb-12">
-            <h1
-              className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white text-center px-4"
-              style={{ textShadow: "0 2px 16px rgba(0,0,0,0.75), 0 1px 4px rgba(0,0,0,0.9)" }}
-            >
-              The Church of Reason
-            </h1>
-          </div>
         </section>
 
         {/* Compact tagline + CTA below hero */}
         <section className="py-8 md:py-10 bg-background border-b border-border">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-lg md:text-xl font-medium tracking-wide text-accent mb-2">
+              <p className="text-lg md:text-xl font-medium tracking-wide text-accent mb-5">
                 Promoting Reason in a Modern World
-              </p>
-              <p className="text-base md:text-lg text-muted-foreground mb-5">
-                Our Ten Reasonable Precepts dedicated to attain Health, Wealth and Knowledge.
               </p>
               <Link
                 href="/precepts"
