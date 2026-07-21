@@ -15,24 +15,25 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative text-primary-foreground overflow-hidden">
-          <div className="absolute inset-0">
-            <img
-              src={HERO_IMG}
-              alt="Classical statue against modern skyscrapers"
-              className="w-full h-full object-cover"
-            />
+        <section className="relative overflow-hidden">
+          <img
+            src={HERO_IMG}
+            alt="Classical statue against modern skyscrapers"
+            className="w-full h-[50vh] md:h-[70vh] object-cover"
+          />
+        </section>
 
-          </div>
-          <div className="relative container py-24 md:py-36">
+        {/* Site Title Section (below hero) */}
+        <section className="py-16 md:py-20 bg-background border-b border-border">
+          <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-lg md:text-xl font-medium mb-4 tracking-wide [text-shadow:0_2px_10px_rgba(0,0,0,0.85)]">
+              <p className="text-lg md:text-xl font-medium mb-4 tracking-wide text-accent">
                 Promoting Reason in a Modern World
               </p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight [text-shadow:0_3px_16px_rgba(0,0,0,0.9)]">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight text-primary">
                 The Church of Reason
               </h1>
-              <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed [text-shadow:0_2px_10px_rgba(0,0,0,0.85)]">
+              <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed text-muted-foreground">
                 Our Ten Reasonable Precepts dedicated to attain Health, Wealth and Knowledge.
               </p>
               <Link

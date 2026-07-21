@@ -78,3 +78,6 @@
 ## Bug Fixes (User Reported)
 - [x] Fix nested <a> error: remove <a> tags wrapped inside wouter <Link> components (Home page and anywhere else)
 - [x] Remove darkening overlay from Home hero so the image shows in full color and visibility (keep text readable)
+- [x] Remove all text from the Home hero (image only)
+- [x] Move the site name/headline to a new section just below the hero
+- [x] Remove the "Made with Manus" badge (platform-injected; controlled via Management UI Settings, not code — user informed)
