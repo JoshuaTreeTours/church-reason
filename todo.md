@@ -85,3 +85,8 @@
 - [x] Re-extract the original Library book list (titles, authors, ASINs) from hereandclear.org
 - [x] Correct Library entries so displayed title/author matches the actual book behind each Amazon link (verified all 32 ASINs against live Amazon pages)
 - [x] Verify all Amazon links resolve to the correct books (dropped non-book/unrelated ASINs: DVD sets and A Curious Madness)
+
+## Book Cover Thumbnails (User Request)
+- [x] Verify Open Library cover availability for each book ISBN/ASIN (25/28 via ISBN; 3 via verified cover IDs)
+- [x] Add cover thumbnails to Library cards with graceful fallback for missing covers
+- [x] Test visually, run checks, checkpoint, and deliver

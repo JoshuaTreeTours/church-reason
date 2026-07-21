@@ -1,11 +1,34 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, BookOpen } from "lucide-react";
 
 // Book list restored from the original library page (hereandclear.org/library.html).
 // Every title/author below was verified against the actual Amazon product page
 // for the original site's ASIN, so displayed names match the linked products.
-const bookCategories = [
+//
+// Cover thumbnails come from Open Library's free covers API:
+//   https://covers.openlibrary.org/b/isbn/{ISBN}-M.jpg
+// Availability was verified per-ISBN. For the three books without an ISBN
+// cover (Schopenhauer Vol. 1, Hume's collected works, Newton's Principia),
+// a verified Open Library cover ID (`/b/id/{id}-M.jpg`) is used instead.
+
+interface Book {
+  title: string;
+  author: string;
+  asin: string;
+  /** Open Library cover ID override for books whose ISBN has no cover */
+  coverId?: number;
+}
+
+function coverUrl(book: Book): string {
+  if (book.coverId) {
+    return `https://covers.openlibrary.org/b/id/${book.coverId}-M.jpg`;
+  }
+  return `https://covers.openlibrary.org/b/isbn/${book.asin}-M.jpg`;
+}
+
+const bookCategories: { title: string; books: Book[] }[] = [
   {
     title: "Science",
     books: [
@@ -23,7 +46,7 @@ const bookCategories = [
       },
       {
         title: "The Non-Local Universe: The New Physics and Matters of the Mind",
-        author: "Robert Nadeau & Menas Kafatos", // verified: Amazon page for 0195144082 lists this title/author pair
+        author: "Robert Nadeau & Menas Kafatos",
         asin: "0195144082",
       },
       { title: "God and the Atom", author: "Victor J. Stenger", asin: "1616147539" },
@@ -56,8 +79,14 @@ const bookCategories = [
         title: "The World as Will and Representation, Volume 1",
         author: "Arthur Schopenhauer",
         asin: "1107414776",
+        coverId: 308780, // Payne translation cover (ISBN edition has no cover on Open Library)
       },
-      { title: "David Hume: 21 Works", author: "David Hume", asin: "B00O924WHM" },
+      {
+        title: "David Hume: 21 Works",
+        author: "David Hume",
+        asin: "B00O924WHM",
+        coverId: 314112, // Hume portrait cover (Kindle ASIN has no ISBN cover)
+      },
       {
         title: "The Essential Epicurus: Letters, Principal Doctrines, Vatican Sayings, and Fragments",
         author: "Epicurus (translated by Eugene M. O'Connor)",
@@ -120,14 +149,39 @@ const bookCategories = [
         title: "Philosophiae Naturalis Principia Mathematica",
         author: "Isaac Newton",
         asin: "1603863796",
+        coverId: 7122145, // Original 1687 title page (modern reprint ISBN has no cover)
       },
     ],
   },
 ];
 
-function bookLink(book: { asin?: string; url?: string }) {
-  if (book.url) return book.url;
+function bookLink(book: Book) {
   return `https://www.amazon.com/dp/${book.asin}`;
+}
+
+/** Book cover with graceful fallback to a styled placeholder if the image fails to load. */
+function BookCover({ book }: { book: Book }) {
+  const [failed, setFailed] = useState(false);
+
+  if (failed) {
+    return (
+      <div className="w-20 h-28 shrink-0 rounded-sm bg-primary/5 border border-border flex items-center justify-center">
+        <BookOpen className="text-muted-foreground/50" size={24} />
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-20 h-28 shrink-0 rounded-sm overflow-hidden bg-primary/5 border border-border shadow-sm">
+      <img
+        src={coverUrl(book)}
+        alt={`Cover of ${book.title}`}
+        loading="lazy"
+        onError={() => setFailed(true)}
+        className="w-full h-full object-cover transition-smooth group-hover:scale-105"
+      />
+    </div>
+  );
 }
 
 export default function Library() {
@@ -158,27 +212,30 @@ export default function Library() {
                     {category.title}
                   </h2>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {category.books.map((book, bookIndex) => (
                       <a
                         key={bookIndex}
                         href={bookLink(book)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group bg-card rounded-lg p-6 shadow-elegant hover:shadow-elegant-lg transition-smooth border border-border hover:border-accent"
+                        className="group bg-card rounded-lg p-5 shadow-elegant hover:shadow-elegant-lg transition-smooth border border-border hover:border-accent"
                       >
-                        <div className="flex flex-col h-full">
-                          <div className="mb-4 flex-1">
-                            <h3 className="font-serif text-lg font-bold text-foreground group-hover:text-accent transition-smooth mb-2">
-                              {book.title}
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              {book.author}
-                            </p>
-                          </div>
-                          <div className="flex items-center gap-2 text-accent font-semibold text-sm">
-                            View on Amazon
-                            <ExternalLink size={16} />
+                        <div className="flex gap-5 h-full">
+                          <BookCover book={book} />
+                          <div className="flex flex-col flex-1 min-w-0">
+                            <div className="flex-1">
+                              <h3 className="font-serif text-lg font-bold text-foreground group-hover:text-accent transition-smooth mb-1 leading-snug">
+                                {book.title}
+                              </h3>
+                              <p className="text-sm text-muted-foreground">
+                                {book.author}
+                              </p>
+                            </div>
+                            <div className="flex items-center gap-2 text-accent font-semibold text-sm mt-3">
+                              View on Amazon
+                              <ExternalLink size={16} />
+                            </div>
                           </div>
                         </div>
                       </a>
