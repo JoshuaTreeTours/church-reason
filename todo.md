@@ -74,3 +74,6 @@
 - [x] Restore original wording and images on Library page (original Library is hosted on hereandclear.org; book list retained with Amazon links, no images on original)
 - [x] Verify all pages visually after restoration
 - [x] Save checkpoint and deliver updated site
+
+## Bug Fixes (User Reported)
+- [x] Fix nested <a> error: remove <a> tags wrapped inside wouter <Link> components (Home page and anywhere else)

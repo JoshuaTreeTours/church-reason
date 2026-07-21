@@ -35,11 +35,12 @@ export default function Home() {
               <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
                 Our Ten Reasonable Precepts dedicated to attain Health, Wealth and Knowledge.
               </p>
-              <Link href="/precepts">
-                <a className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-secondary/90 transition-smooth active:scale-95">
-                  Explore the Precepts
-                  <ArrowRight size={20} />
-                </a>
+              <Link
+                href="/precepts"
+                className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-secondary/90 transition-smooth active:scale-95"
+              >
+                Explore the Precepts
+                <ArrowRight size={20} />
               </Link>
             </div>
           </div>
