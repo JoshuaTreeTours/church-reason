@@ -1,10 +1,9 @@
 import { Link } from "wouter";
-import { ArrowRight, HeartPulse, Landmark, BookOpen } from "lucide-react";
+import { ArrowRight, HeartPulse, Landmark, BookOpen, Lightbulb } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const HERO_IMG = "/images/home-hero_7c653cae.jpg";
-const THINKING_IMG = "/images/home-thinking_2f4418d8.png";
 const QUOTE_IMG = "/images/home-quote-img_213b8d88.jpg";
 const FB_CTA_IMG = "/images/home-fb-cta_44a20828.jpg";
 
@@ -14,12 +13,12 @@ export default function Home() {
       <Navigation />
 
       <main className="flex-1">
-        {/* Hero Section with title inside */}
+        {/* Hero Section */}
         <section className="relative overflow-hidden">
           <img
             src={HERO_IMG}
             alt="Classical statue against modern skyscrapers"
-            className="w-full h-[38vh] md:h-[60vh] object-cover"
+            className="w-full h-[38vh] md:h-[60vh] object-cover [filter:sepia(0.18)_saturate(0.95)_brightness(1.03)]"
           />
         </section>
 
@@ -29,7 +28,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center">
               <Link
                 href="/precepts"
-                className="inline-flex items-center gap-2 bg-[#E3C46A] text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-[#D6B657] transition-smooth active:scale-95"
+                className="inline-flex items-center gap-2 bg-[#E3C46A] text-foreground px-6 py-3 rounded-lg font-serif text-lg font-semibold hover:bg-[#D6B657] transition-smooth active:scale-95"
               >
                 Explore the Precepts
                 <ArrowRight size={18} />
@@ -41,22 +40,48 @@ export default function Home() {
         {/* Definition of Reason */}
         <section className="pt-4 pb-8 md:py-10 bg-background">
           <div className="container">
-            <div className="max-w-3xl mx-auto">
-              <img
-                src={THINKING_IMG}
-                alt="Dictionary definition of reason"
-                className="w-full rounded-lg shadow-elegant border border-border bg-white"
-              />
+            <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white p-6 md:p-8 shadow-elegant">
+              <div>
+                <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground">Reason</h2>
+                <p className="mt-1 text-lg italic text-[#b88a2d]">(noun)</p>
+              </div>
+
+              <div className="my-5 flex items-center gap-3 text-[#d5aa49]" aria-hidden="true">
+                <span className="h-px flex-1 bg-[#d5aa49]" />
+                <span className="text-lg">◆</span>
+                <span className="h-px flex-1 bg-[#d5aa49]" />
+              </div>
+
+              <div className="grid grid-cols-[auto_1fr] gap-4">
+                <span className="font-serif text-xl text-[#b88a2d]">1.</span>
+                <div>
+                  <p className="font-serif text-xl md:text-2xl font-semibold leading-snug text-foreground">
+                    The human capacity to think, understand, and form judgments through logic, evidence, and critical inquiry.
+                  </p>
+                  <p className="mt-3 text-base italic text-muted-foreground">
+                    “The minister resigned for personal reasons.”
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 flex items-start gap-4 rounded-xl border border-[#efdcae] bg-[#fffaf0] p-4 md:p-5">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#dfb84f] text-white">
+                  <Lightbulb size={28} strokeWidth={2.2} />
+                </div>
+                <p className="text-base md:text-lg leading-relaxed text-foreground">
+                  At The Church of Reason, we use reason to seek the best explanations, make better decisions, and live with greater clarity and integrity.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Thinking is Good Section */}
+        {/* Why Reason Matters Section */}
         <section className="py-10 md:py-14 bg-background">
           <div className="container">
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
               <div className="md:col-span-3">
-                <h2 className="section-title mb-5">Thinking is Good</h2>
+                <h2 className="section-title mb-5">Why Reason Matters</h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-base md:text-lg leading-relaxed text-foreground mb-3">
                     In a modern era of skyscapers and technology, so many people are still side-tracked by false belief systems that are not based on reason. Reason allows us humans to think, to anticipate and to invent. It is what separates us from all the animals and inanimate matter on Earth.
