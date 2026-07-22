@@ -130,3 +130,8 @@
 ## Precepts Header Text (User Request)
 - [x] Replace Precepts page header text with the new "Ten reasoned precepts..." wording
 - [x] Verify, checkpoint, and deliver
+
+## GitHub Push (User Request)
+- [ ] Check state of JoshuaTreeTours/church-reason repository
+- [ ] Push complete project code to main branch
+- [ ] Verify push succeeded and report to user
