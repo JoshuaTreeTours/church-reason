@@ -40,7 +40,7 @@ export default function Home() {
         {/* Definition of Reason */}
         <section className="pt-3 pb-6 md:py-10 bg-background">
           <div className="container">
-            <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white p-5 md:p-8 shadow-elegant">
+            <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white px-4 py-5 md:p-8 shadow-elegant">
               <div className="flex items-baseline gap-3">
                 <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground">Reason</h2>
                 <p className="text-base md:text-lg italic text-[#b88a2d]">(noun)</p>
@@ -52,7 +52,7 @@ export default function Home() {
                 <span className="h-px flex-1 bg-[#d5aa49]" />
               </div>
 
-              <p className="font-serif text-lg md:text-2xl font-semibold leading-snug text-foreground">
+              <p className="font-serif text-[17px] md:text-xl font-medium leading-[1.4] text-foreground">
                 The human capacity to think, understand, and form judgments through logic, evidence, and critical inquiry.
               </p>
 
