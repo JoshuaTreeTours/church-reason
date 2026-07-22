@@ -18,7 +18,7 @@ export default function Home() {
           <img
             src={HERO_IMG}
             alt="Classical statue against modern skyscrapers"
-            className="w-full h-[38vh] md:h-[60vh] object-cover [filter:sepia(0.18)_saturate(0.95)_brightness(1.03)]"
+            className="w-full h-[35vh] md:h-[60vh] object-cover [filter:sepia(0.18)_saturate(0.95)_brightness(1.03)]"
           />
         </section>
 
