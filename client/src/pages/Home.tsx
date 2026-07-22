@@ -42,7 +42,7 @@ export default function Home() {
           <div className="container">
             <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white px-4 py-3 md:p-8 shadow-elegant">
               <div className="flex items-baseline gap-3">
-                <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground">Reason</h2>
+                <h2 className="font-serif text-xl md:text-3xl font-semibold text-foreground">Reason</h2>
                 <p className="text-sm md:text-lg italic text-[#b88a2d]">(noun)</p>
               </div>
 
@@ -52,7 +52,7 @@ export default function Home() {
                 <span className="h-px flex-1 bg-[#d5aa49]" />
               </div>
 
-              <p className="font-serif text-[12px] md:text-xl font-medium leading-[1.35] text-foreground">
+              <p className="font-serif text-[12px] md:text-xl font-medium italic leading-[1.35] text-foreground">
                 The human capacity to think, understand, and form judgments through logic, evidence, and critical inquiry.
               </p>
 
