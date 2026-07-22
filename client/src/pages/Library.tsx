@@ -34,6 +34,7 @@ const bookCategories: { title: string; books: Book[] }[] = [
     books: [
       { title: "The Origin of Species: 150th Anniversary Edition", author: "Charles Darwin", asin: "0451529065" },
       { title: "A Brief History of Time", author: "Stephen Hawking", asin: "0553380168" },
+      { title: "Cosmos", author: "Carl Sagan", asin: "0345539435" },
       {
         title: "Billions & Billions: Thoughts on Life and Death at the Brink of the Millennium",
         author: "Carl Sagan",
