@@ -81,7 +81,7 @@ export default function Home() {
                     At The Church of Reason, we promote the use of this highest faculty to avoid beliefs based on bad evidence. We promote science and the art of happiness.
                   </p>
                   <p className="text-base md:text-lg leading-relaxed text-foreground mb-3">
-                    We will not try to change your religion. Religion has offered comfort to many people throughout the centuries. But to our members, knowing is believing.
+                    We do not seek to change anyone's religion. Religion has offered comfort and meaning to many throughout history. Our purpose is simply to encourage the pursuit of knowledge through reason, evidence, and critical inquiry.
                   </p>
                   <p className="text-base md:text-lg leading-relaxed text-foreground mb-3">
                     Life is short, but it is amazing and can be fun.
