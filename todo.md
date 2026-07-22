@@ -137,7 +137,7 @@
 - [x] Verify push succeeded and report to user
 
 ## Vercel Deployment Fix (User Request)
-- [ ] Diagnose why Vercel serves raw server/_core/index.ts instead of the site
-- [ ] Add vercel.json with correct build command, output directory, and SPA rewrites
-- [ ] Verify the frontend build works locally
-- [ ] Push the fix to GitHub and report backend limitations
+- [x] Diagnose why Vercel serves raw server/_core/index.ts instead of the site
+- [x] Add vercel.json with correct build command, output directory, and SPA rewrites
+- [x] Verify the frontend build works locally
+- [x] Push the fix to GitHub and report backend limitations
