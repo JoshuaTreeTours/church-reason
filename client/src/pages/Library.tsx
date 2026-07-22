@@ -122,7 +122,7 @@ const bookCategories: { title: string; books: Book[] }[] = [
     ],
   },
   {
-    title: "Must Reads",
+    title: "Secular Thought",
     books: [
       {
         title: "The Demon-Haunted World: Science as a Candle in the Dark",
@@ -139,6 +139,11 @@ const bookCategories: { title: string; books: Book[] }[] = [
         title: "Waking Up: A Guide to Spirituality Without Religion",
         author: "Sam Harris",
         asin: "1451636016",
+      },
+      {
+        title: "The Power of Myth",
+        author: "Joseph Campbell with Bill Moyers",
+        asin: "0385418868",
       },
     ],
   },
