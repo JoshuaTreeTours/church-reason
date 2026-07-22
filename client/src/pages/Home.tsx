@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 
 const HERO_IMG = "/images/home-hero_7c653cae.jpg";
 const QUOTE_IMG = "/images/home-quote-img_213b8d88.jpg";
-const FB_CTA_IMG = "/images/home-fb-cta_44a20828.jpg";
 
 export default function Home() {
   return (
@@ -155,41 +154,6 @@ export default function Home() {
                 </p>
                 <p className="text-sm font-serif">— The Church of Reason</p>
               </blockquote>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-10 md:py-14 bg-card border-t border-border">
-          <div className="container">
-            <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 text-center sm:text-left">
-              <a
-                href="https://www.facebook.com/churchreason/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0"
-              >
-                <img
-                  src={FB_CTA_IMG}
-                  alt="Join Church Reason on Facebook today!"
-                  className="w-20 h-20 rounded-lg shadow-elegant hover:shadow-elegant-lg transition-smooth"
-                />
-              </a>
-              <div>
-                <h2 className="section-title mb-1">Join the Reasonables</h2>
-                <p className="text-base text-muted-foreground">
-                  Read our latest Facebook Posts and follow us to join.
-                </p>
-              </div>
-              <a
-                href="https://www.facebook.com/churchreason/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex shrink-0 items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-smooth active:scale-95"
-              >
-                Join on Facebook
-                <ArrowRight size={18} />
-              </a>
             </div>
           </div>
         </section>
