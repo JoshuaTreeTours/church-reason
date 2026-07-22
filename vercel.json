@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install -g pnpm && pnpm install --no-frozen-lockfile",
+  "buildCommand": "npx vite build",
+  "outputDirectory": "dist/public",
+  "redirects": [
+    {
+      "source": "/manus-storage/:path*",
+      "destination": "https://www.churchreason.com/manus-storage/:path*",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!assets/|favicon|manus-storage/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

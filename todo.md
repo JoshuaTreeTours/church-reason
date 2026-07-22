@@ -132,6 +132,12 @@
 - [x] Verify, checkpoint, and deliver
 
 ## GitHub Push (User Request)
-- [ ] Check state of JoshuaTreeTours/church-reason repository
-- [ ] Push complete project code to main branch
-- [ ] Verify push succeeded and report to user
+- [x] Check state of JoshuaTreeTours/church-reason repository (was empty)
+- [x] Push complete project code to main branch
+- [x] Verify push succeeded and report to user
+
+## Vercel Deployment Fix (User Request)
+- [ ] Diagnose why Vercel serves raw server/_core/index.ts instead of the site
+- [ ] Add vercel.json with correct build command, output directory, and SPA rewrites
+- [ ] Verify the frontend build works locally
+- [ ] Push the fix to GitHub and report backend limitations
