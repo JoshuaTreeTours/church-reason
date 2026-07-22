@@ -38,6 +38,19 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Definition of Reason */}
+        <section className="py-8 md:py-10 bg-background">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <img
+                src={THINKING_IMG}
+                alt="Dictionary definition of reason"
+                className="w-full rounded-lg shadow-elegant border border-border bg-white"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Thinking is Good Section */}
         <section className="py-10 md:py-14 bg-background">
           <div className="container">
@@ -63,11 +76,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="md:col-span-2 flex flex-col gap-4 md:pt-14">
-                <img
-                  src={THINKING_IMG}
-                  alt="Dictionary definition of reason"
-                  className="w-full rounded-lg shadow-elegant border border-border bg-white"
-                />
                 <img
                   src={QUOTE_IMG}
                   alt="Always Seek Knowledge"
