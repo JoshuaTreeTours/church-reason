@@ -35,16 +35,27 @@ const bookCategories: { title: string; books: Book[] }[] = [
       { title: "The Origin of Species: 150th Anniversary Edition", author: "Charles Darwin", asin: "0451529065" },
       { title: "A Brief History of Time", author: "Stephen Hawking", asin: "0553380168" },
       {
-        title: "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory",
-        author: "Brian Greene",
-        asin: "039333810X",
-      },
-      {
         title: "Billions & Billions: Thoughts on Life and Death at the Brink of the Millennium",
         author: "Carl Sagan",
         asin: "0345379187",
       },
       { title: "God and the Atom", author: "Victor J. Stenger", asin: "1616147539" },
+      {
+        title: "A Dynamical Theory of the Electromagnetic Field",
+        author: "James Clerk Maxwell",
+        asin: "1603866167",
+      },
+      {
+        title: "The Thirteen Books of the Elements, Vol. 1",
+        author: "Euclid",
+        asin: "0486600882",
+      },
+      {
+        title: "Philosophiae Naturalis Principia Mathematica",
+        author: "Isaac Newton",
+        asin: "1603863796",
+        coverId: 7122145, // Original 1687 title page (modern reprint ISBN has no cover)
+      },
     ],
   },
   {
@@ -128,22 +139,6 @@ const bookCategories: { title: string; books: Book[] }[] = [
         title: "Waking Up: A Guide to Spirituality Without Religion",
         author: "Sam Harris",
         asin: "1451636016",
-      },
-      {
-        title: "A Dynamical Theory of the Electromagnetic Field",
-        author: "James Clerk Maxwell",
-        asin: "1603866167",
-      },
-      {
-        title: "The Thirteen Books of the Elements, Vol. 1",
-        author: "Euclid",
-        asin: "0486600882",
-      },
-      {
-        title: "Philosophiae Naturalis Principia Mathematica",
-        author: "Isaac Newton",
-        asin: "1603863796",
-        coverId: 7122145, // Original 1687 title page (modern reprint ISBN has no cover)
       },
     ],
   },
