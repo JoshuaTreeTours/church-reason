@@ -23,44 +23,44 @@ export default function Home() {
         </section>
 
         {/* CTA below hero */}
-        <section className="pt-4 pb-3 md:py-10 bg-background border-b border-border">
+        <section className="pt-3 pb-2 md:py-10 bg-background border-b border-border">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
               <Link
                 href="/precepts"
-                className="inline-flex items-center gap-2 bg-[#E3C46A] text-foreground px-6 py-3 rounded-lg font-serif text-lg font-semibold hover:bg-[#D6B657] transition-smooth active:scale-95"
+                className="inline-flex items-center gap-1.5 bg-[#E3C46A] text-foreground px-4 py-2 rounded-lg font-serif text-base font-semibold hover:bg-[#D6B657] transition-smooth active:scale-95"
               >
                 Explore the Precepts
-                <ArrowRight size={18} />
+                <ArrowRight size={16} />
               </Link>
             </div>
           </div>
         </section>
 
         {/* Definition of Reason */}
-        <section className="pt-1 pb-5 md:py-10 bg-background">
+        <section className="pt-1 pb-4 md:py-10 bg-background">
           <div className="container">
-            <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white px-4 py-4 md:p-8 shadow-elegant">
+            <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white px-4 py-3 md:p-8 shadow-elegant">
               <div className="flex items-baseline gap-3">
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground">Reason</h2>
-                <p className="text-base md:text-lg italic text-[#b88a2d]">(noun)</p>
+                <p className="text-sm md:text-lg italic text-[#b88a2d]">(noun)</p>
               </div>
 
-              <div className="my-2 flex items-center gap-3 text-[#d5aa49]" aria-hidden="true">
+              <div className="my-1.5 flex items-center gap-3 text-[#d5aa49]" aria-hidden="true">
                 <span className="h-px flex-1 bg-[#d5aa49]" />
                 <span className="text-xs">◆</span>
                 <span className="h-px flex-1 bg-[#d5aa49]" />
               </div>
 
-              <p className="font-serif text-[17px] md:text-xl font-medium leading-[1.4] text-foreground">
+              <p className="font-serif text-[12px] md:text-xl font-medium leading-[1.35] text-foreground">
                 The human capacity to think, understand, and form judgments through logic, evidence, and critical inquiry.
               </p>
 
-              <div className="mt-3 flex items-start gap-3 rounded-xl border border-[#efdcae] bg-[#fffaf0] p-3 md:p-5">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#dfb84f] text-white">
-                  <Lightbulb size={20} strokeWidth={2.2} />
+              <div className="mt-2 flex items-start gap-2.5 rounded-xl border border-[#efdcae] bg-[#fffaf0] p-2.5 md:p-5">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#dfb84f] text-white">
+                  <Lightbulb size={18} strokeWidth={2.2} />
                 </div>
-                <p className="text-sm md:text-lg leading-relaxed text-foreground">
+                <p className="text-[12px] md:text-lg leading-[1.35] text-foreground">
                   At The Church of Reason, we use reason to seek the best explanations, make better decisions, and live with greater clarity and integrity.
                 </p>
               </div>
