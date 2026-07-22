@@ -1,10 +1,8 @@
-import { Facebook } from "lucide-react";
-
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-card py-12 md:py-16">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-8">
           {/* About Section */}
           <div>
             <h3 className="font-serif text-lg font-bold mb-4">The Church of Reason</h3>
@@ -13,23 +11,6 @@ export default function Footer() {
             </p>
             <p className="text-sm text-muted-foreground italic">
               "No profits or prophets / Just being nice."
-            </p>
-          </div>
-
-          {/* Community Section */}
-          <div>
-            <h3 className="font-serif text-lg font-bold mb-4">Join Us</h3>
-            <a
-              href="https://www.facebook.com/churchreason/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-smooth font-medium"
-            >
-              <Facebook size={20} />
-              Join on Facebook
-            </a>
-            <p className="text-sm text-muted-foreground mt-4">
-              Connect with the Reasonables community and share in the pursuit of knowledge.
             </p>
           </div>
 
