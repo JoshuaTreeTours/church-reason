@@ -19,12 +19,12 @@ export default function Home() {
           <img
             src={HERO_IMG}
             alt="Classical statue against modern skyscrapers"
-            className="w-full h-[45vh] md:h-[60vh] object-cover"
+            className="w-full h-[38vh] md:h-[60vh] object-cover"
           />
         </section>
 
         {/* CTA below hero */}
-        <section className="py-8 md:py-10 bg-background border-b border-border">
+        <section className="py-5 md:py-10 bg-background border-b border-border">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
               <Link
@@ -39,7 +39,7 @@ export default function Home() {
         </section>
 
         {/* Definition of Reason */}
-        <section className="py-8 md:py-10 bg-background">
+        <section className="pt-4 pb-8 md:py-10 bg-background">
           <div className="container">
             <div className="max-w-3xl mx-auto">
               <img
