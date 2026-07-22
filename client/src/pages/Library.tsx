@@ -44,11 +44,6 @@ const bookCategories: { title: string; books: Book[] }[] = [
         author: "Carl Sagan",
         asin: "0345379187",
       },
-      {
-        title: "The Non-Local Universe: The New Physics and Matters of the Mind",
-        author: "Robert Nadeau & Menas Kafatos",
-        asin: "0195144082",
-      },
       { title: "God and the Atom", author: "Victor J. Stenger", asin: "1616147539" },
     ],
   },
