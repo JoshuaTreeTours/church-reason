@@ -3,10 +3,10 @@ import { ArrowRight, HeartPulse, Landmark, BookOpen } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const HERO_IMG = "/manus-storage/home-hero_7c653cae.jpg";
-const THINKING_IMG = "/manus-storage/home-thinking_2f4418d8.png";
-const QUOTE_IMG = "/manus-storage/home-quote-img_213b8d88.jpg";
-const FB_CTA_IMG = "/manus-storage/home-fb-cta_44a20828.jpg";
+const HERO_IMG = "/images/home-hero_7c653cae.jpg";
+const THINKING_IMG = "/images/home-thinking_2f4418d8.png";
+const QUOTE_IMG = "/images/home-quote-img_213b8d88.jpg";
+const FB_CTA_IMG = "/images/home-fb-cta_44a20828.jpg";
 
 export default function Home() {
   return (

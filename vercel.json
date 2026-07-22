@@ -4,16 +4,9 @@
   "installCommand": "npm install -g pnpm && pnpm install --no-frozen-lockfile",
   "buildCommand": "npx vite build",
   "outputDirectory": "dist/public",
-  "redirects": [
-    {
-      "source": "/manus-storage/:path*",
-      "destination": "https://www.churchreason.com/manus-storage/:path*",
-      "permanent": false
-    }
-  ],
   "rewrites": [
     {
-      "source": "/((?!assets/|favicon|manus-storage/).*)",
+      "source": "/((?!assets/|images/|favicon).*)",
       "destination": "/index.html"
     }
   ]

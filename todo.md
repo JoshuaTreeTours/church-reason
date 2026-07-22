@@ -141,3 +141,11 @@
 - [x] Add vercel.json with correct build command, output directory, and SPA rewrites
 - [x] Verify the frontend build works locally
 - [x] Push the fix to GitHub and report backend limitations
+
+## Vendor Images Into Repo (User Request)
+- [ ] Inventory all /manus-storage/ image references in client code
+- [ ] Download every image into client/public/images/
+- [ ] Update all code references from /manus-storage/... to /images/...
+- [ ] Remove the /manus-storage proxy redirect from vercel.json
+- [ ] Verify build includes images and nothing references manus-storage
+- [ ] Push to GitHub and report

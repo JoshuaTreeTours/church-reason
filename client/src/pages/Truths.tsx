@@ -1,8 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const KIERKEGAARD_IMG = "/manus-storage/truths-photo_f926314a.jpg";
-const TYSON_IMG = "/manus-storage/truths-graphic_24edbf1a.png";
+const KIERKEGAARD_IMG = "/images/truths-photo_f926314a.jpg";
+const TYSON_IMG = "/images/truths-graphic_24edbf1a.png";
 
 const hardTruths = [
   { text: "This life is real.", imperative: "Get serious!" },

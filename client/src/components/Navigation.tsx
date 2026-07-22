@@ -19,7 +19,7 @@ export default function Navigation() {
         <Link href="/">
           <div className="flex items-center gap-2 cursor-pointer">
             <img
-              src="/manus-storage/home-fb-cta_44a20828.jpg"
+              src="/images/home-fb-cta_44a20828.jpg"
               alt="Church of Reason seal"
               className="w-[108px] h-[108px] rounded-lg object-cover border border-border"
             />

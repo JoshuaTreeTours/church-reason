@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const ATHENS_IMG = "/manus-storage/school-of-athens_061ad6f2.jpg";
+const ATHENS_IMG = "/images/school-of-athens_061ad6f2.jpg";
 
 const precepts = [
   {
