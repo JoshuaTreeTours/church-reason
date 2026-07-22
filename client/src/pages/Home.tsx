@@ -23,16 +23,13 @@ export default function Home() {
           />
         </section>
 
-        {/* Compact tagline + CTA below hero */}
+        {/* CTA below hero */}
         <section className="py-8 md:py-10 bg-background border-b border-border">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-lg md:text-xl font-medium tracking-wide text-accent mb-5">
-                Promoting Reason in a Modern World
-              </p>
               <Link
                 href="/precepts"
-                className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-smooth active:scale-95"
+                className="inline-flex items-center gap-2 bg-[#E3C46A] text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-[#D6B657] transition-smooth active:scale-95"
               >
                 Explore the Precepts
                 <ArrowRight size={18} />
