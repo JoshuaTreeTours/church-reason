@@ -49,10 +49,10 @@ const easyTruths = [
   { text: "Money is the currency of the day and defines our personal freedoms.", imperative: "Be efficient!" },
   { text: "Your largest obstacles in life include where you live and who you live with.", imperative: "Choose wisely!" },
   { text: "Music and meditation control the mind. Avoid negative thoughts and feelings.", imperative: "Transcend!" },
-  { text: "Desire is the minds fire. Fuel it with good living, food and healthy choices.", imperative: "Control yourself!" },
+  { text: "Desire is the mind's fire. Fuel it with good living, food and healthy choices.", imperative: "Control yourself!" },
   { text: "Envy is a motivator. Complacency is stagnant.", imperative: "Be inspired!" },
   { text: "The artificial human world is filled with auditory and visual distractions.", imperative: "Flee to nature!" },
-  { text: "There are shortcuts. A life lived without a risk is stagnant and dies.", imperative: "Be precautious!" },
+  { text: "There are shortcuts. A life lived without a risk is stagnant and dies.", imperative: "Be courageous!" },
   { text: "Do not reach for the stars unless you want to be disappointed.", imperative: "Be realistic!" },
   {
     text: "We live in an age when knowledge of ourselves and the Cosmos can be shared and discovered better than ever.",
