@@ -19,7 +19,7 @@ const hardTruths = [
     imperative: "Laugh!",
   },
   { text: "Failure is a teacher.", imperative: "Try, try again!" },
-  { text: "Love is not universal.", imperative: "Love yourself!" },
+  { text: "Love is never guaranteed.", imperative: "Love yourself!" },
   {
     text: "Fear protects us from real dangers. It misleads us when attached to superstition.",
     imperative: "Think!",
