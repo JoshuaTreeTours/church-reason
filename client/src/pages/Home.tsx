@@ -37,7 +37,7 @@ export default function Home() {
         </section>
 
         {/* Definition of Reason */}
-        <section className="pt-1 pb-4 md:py-10 bg-background">
+        <section className="pt-1 pb-[66px] md:py-10 bg-background">
           <div className="container">
             <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white px-4 py-3 md:p-8 shadow-elegant">
               <div className="flex items-baseline gap-3">
