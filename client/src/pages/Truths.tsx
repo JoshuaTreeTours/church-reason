@@ -69,7 +69,7 @@ const duties = [
   },
   {
     title: "ACQUIRE",
-    description: "Make your dreams happen by making reasonable efforts to achieve success.",
+    description: "Achieve your dreams through reasonable efforts.",
   },
   {
     title: "PRESERVE",
