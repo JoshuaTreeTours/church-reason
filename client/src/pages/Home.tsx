@@ -37,7 +37,7 @@ export default function Home() {
         </section>
 
         {/* Definition of Reason */}
-        <section className="pt-1 pb-[34px] md:py-10 bg-background">
+        <section className="pt-1 pb-[22px] md:py-10 bg-background">
           <div className="container">
             <div className="max-w-3xl mx-auto rounded-2xl border border-[#ead9ad] bg-white px-4 py-3 md:p-8 shadow-elegant">
               <div className="flex items-baseline gap-3">
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
 
             {/* Mobile divider occupies the existing spacing below the card */}
-            <div className="mt-4 flex h-4 items-center justify-center gap-2 text-[#d5aa49] md:hidden" aria-hidden="true">
+            <div className="mt-7 flex h-4 items-center justify-center gap-2 text-[#d5aa49] md:hidden" aria-hidden="true">
               <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d5aa49]" />
               <span className="text-[10px]">◆</span>
               <span className="h-3 w-3 rounded-full border border-[#d5aa49]" />
