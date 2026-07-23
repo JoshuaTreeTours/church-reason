@@ -41,7 +41,7 @@ const easyTruths = [
   { text: "Freedoms are not free.", imperative: "Respect them!" },
   { text: "There is no truth worth dying for.", imperative: "Live!" },
   { text: "You are made of star stuff. You are the universe waking up.", imperative: "Wake up!" },
-  { text: 'We are all a Unus mundus, Latin for "one world."', imperative: "Love one another!" },
+  { text: 'We are all part of unus mundus, Latin for "one world."', imperative: "Love one another!" },
   { text: "You were born with a mind to create and set yourself free from sloth and drudgery.", imperative: "Produce!" },
   { text: "Money is the currency of the day and defines our personal freedoms.", imperative: "Be efficient!" },
   { text: "Your largest obstacles in life include where you live and who you live with.", imperative: "Choose wisely!" },
