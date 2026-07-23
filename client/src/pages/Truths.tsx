@@ -59,7 +59,7 @@ const easyTruths = [
     imperative: "Learn!",
   },
   { text: "When you find your bliss,", imperative: "Keep it!" },
-  { text: "Your ultimate goal is within your reach.", imperative: "Go for it!" },
+  { text: "Your greatest potential is within your reach.", imperative: "Go for it!" },
 ];
 
 const duties = [
