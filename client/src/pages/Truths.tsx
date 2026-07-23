@@ -65,7 +65,7 @@ const easyTruths = [
 const duties = [
   {
     title: "ASPIRE",
-    description: "Make reasonable goals for your success in health, wealth and knowledge.",
+    description: "Set reasonable goals for your success in health, wealth, and knowledge.",
   },
   {
     title: "ACQUIRE",
