@@ -7,11 +7,11 @@ const TYSON_IMG = "/images/truths-graphic_24edbf1a.png";
 const hardTruths = [
   { text: "This life is real.", imperative: "Get serious!" },
   {
-    text: "Your consciousness and very person are different day to day and ceases at death. The mind is controlled by the physicality of the brain. Once gone, it returns to oblivion.",
-    imperative: 'Carpe Diem! (Latin for "Live in this day!")',
+    text: "Your consciousness and very person are different day to day and ceases at death. The mind arises from the physical brain. Once gone, it returns to oblivion.",
+    imperative: 'Carpe Diem! (Latin for "Seize the day!")',
   },
   {
-    text: 'Life is not fair - We ARE NOT "all created equal" with equal opportunities.',
+    text: 'Life is not fair. We do not all begin with equal opportunities.',
     imperative: "Be the hunter!",
   },
   {
@@ -21,7 +21,7 @@ const hardTruths = [
   { text: "Failure is a teacher.", imperative: "Try, try again!" },
   { text: "Love is not universal.", imperative: "Love yourself!" },
   {
-    text: "Fear is a necessary teaching agent for real threats to life. It is artificial when applied to superstitions.",
+    text: "Fear protects us from real dangers. It misleads us when attached to superstition.",
     imperative: "Think!",
   },
   {
