@@ -25,7 +25,7 @@ const hardTruths = [
     imperative: "Think!",
   },
   {
-    text: "We are ravaging the planet and on the verge of another catastrophe.",
+    text: "The future is uncertain.",
     imperative: "Prepare!",
   },
 ];
